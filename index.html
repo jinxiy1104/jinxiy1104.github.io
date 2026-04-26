@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jinxi (Steven) Yu - UCLA computer science and applied mathematics student building AI systems, data mining pipelines, and backend-first technical products."
+    />
+    <title>Jinxi (Steven) Yu | AI Systems & Data Mining</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Jinxi Steven Yu home">
+        <span class="brand-mark">JY</span>
+        <span class="brand-text">Jinxi Yu</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#education">Education</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Jinxi (Steven) Yu</h1>
+          <div class="hero-actions" aria-label="Contact links">
+            <a class="button primary" href="mailto:yujinxi1104@hotmail.com">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M4 6h16v12H4z" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+              <span>Email me</span>
+            </a>
+            <a class="button ghost" href="https://linkedin.com/in/jinxiy1104" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M6.5 9.5V18" />
+                <path d="M6.5 6.2v.1" />
+                <path d="M11 18v-5.1c0-1.9 1.1-3.4 3.1-3.4s3.4 1.3 3.4 3.8V18" />
+                <path d="M11 9.8V18" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a class="button ghost" href="https://github.com/jinxiy1104" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M9 19c-4 1.3-4-2-5.5-2.5" />
+                <path d="M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.6 4.6 0 0 0 18.7 7c.1-.4.5-1.8-.2-3.5 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6 0C6.6 3.2 5.5 3.5 5.5 3.5 4.8 5.2 5.2 6.6 5.3 7A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile">
+          <div class="photo-placeholder">
+            <img src="personalPhoto.png" alt="Jinxi Yu portrait" />
+          </div>
+          <div class="profile-caption">
+            <strong>Jinxi Yu</strong>
+            <span>UCLA undergraduate student</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="education-section" id="education">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2>University of California, Los Angeles</h2>
+        </div>
+        <div class="education-card">
+          <div>
+            <h3>B.S. in Computer Science and Applied Mathematics</h3>
+            <p class="role">September 2024 - June 2027 · Los Angeles, CA</p>
+          </div>
+          <dl class="education-details">
+            <div>
+              <dt>GPA</dt>
+              <dd>3.97 / 4.00</dd>
+            </div>
+            <div>
+              <dt>Awards</dt>
+              <dd>Dean's Honors List</dd>
+            </div>
+            <div>
+              <dt>Relevant Coursework</dt>
+              <dd>
+                Object-Oriented Programming (C++), Machine Learning, Natural Language
+                Processing, Deep Learning, Algorithms, Operating Systems, Data Mining
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section-grid" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Research and engineering across AI, data, and software systems.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="time">Feb 2026 - Present</div>
+            <div class="timeline-content">
+              <h3>SCAI Lab UCLA</h3>
+              <p class="role">Research Assistant · AI and Data Mining</p>
+              <p>
+                Designed an LLM-assisted mining pipeline that extracts 3D molecular structures
+                from ChemRxiv, with DOM scraping, resumable checkpoints, and structured dataset
+                conversion for ML and quantum chemistry workflows.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="time">Oct 2025 - Feb 2026</div>
+            <div class="timeline-content">
+              <h3>Sriram Lab UCLA</h3>
+              <p class="role">Research Assistant · Computational Systems Biology</p>
+              <p>
+                Reproduced an LLM-based biological-age prediction pipeline from structured
+                health data, then validated predicted age against mortality outcomes with
+                Python-based statistical analysis.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="time">Jul 2025 - Sep 2025</div>
+            <div class="timeline-content">
+              <h3>Yiyue Intelligent Technology</h3>
+              <p class="role">Full-Stack Developer Intern</p>
+              <p>
+                Built grade management, course management, and role-based notification modules
+                for a university web platform using Vue, Java, Spring Boot, MySQL, and Spring
+                Data JPA.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="time">Jun 2025 - Jul 2025</div>
+            <div class="timeline-content">
+              <h3>Huatai Securities</h3>
+              <p class="role">Data Analysis Intern · Wealth Management</p>
+              <p>
+                Analyzed 2,000+ high-net-worth client records and cross-referenced foundation
+                and university financial statements to surface 30+ organizations with investable
+                endowment assets.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-heading wide">
+          <p class="eyebrow">Selected Builds</p>
+          <h2>Project Highlights</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-meta">
+              <span>Apr 2026 - Present</span>
+              <span>Sole Developer</span>
+            </div>
+            <h3>EgoX</h3>
+            <p class="project-subtitle">AI-powered personal career wiki</p>
+            <p>
+              An AI-native knowledge system with structured extraction, vector similarity
+              deduplication, entity merging, conflict resolution, and a streaming RAG interface
+              with citations under a $5/month budget.
+            </p>
+            <div class="tag-row">
+              <span>LangGraph</span>
+              <span>RAG</span>
+              <span>pgvector</span>
+              <span>Vercel AI SDK</span>
+              <span>Drizzle</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Dec 2025 - Present</span>
+              <span>Sole Developer</span>
+            </div>
+            <h3>Mock-Trader</h3>
+            <p>
+              A trading simulation platform with deterministic rule engines, append-only trade
+              ledgers, position reconstruction, real-time market data, and stateless JWT auth.
+            </p>
+            <div class="tag-row">
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Feb 2026</span>
+              <span>Sole Developer</span>
+            </div>
+            <h3>MNIST HOG-SVM vs ResNet</h3>
+            <p>
+              Built a unified MNIST pipeline comparing HOG + LinearSVC and a custom
+              1-channel ResNet18, including metrics reporting and an interactive drawing demo.
+            </p>
+            <div class="tag-row">
+              <span>PyTorch</span>
+              <span>ResNet18</span>
+              <span>LinearSVC</span>
+            </div>
+            <a class="project-link" href="https://github.com/jinxiy1104/MNIST-HOG-SVM-VS-RESNET" target="_blank" rel="noreferrer">
+              View repository
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Oct 2025 - Nov 2025</span>
+              <span>Sole Developer</span>
+            </div>
+            <h3>NanoGPT</h3>
+            <p>
+              Reproduced a Transformer language model with self-attention and causal masking,
+              then trained a small autoregressive model to generate Shakespeare-style text.
+            </p>
+            <div class="tag-row">
+              <span>PyTorch</span>
+              <span>Attention</span>
+              <span>Language Modeling</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Sep 2025 - Jan 2026</span>
+              <span>Team Research Lead</span>
+            </div>
+            <h3>Market Sentiment Predictor</h3>
+            <p>
+              Built an NLP sentiment classifier using 768-dimensional LLM embeddings on
+              financial news, reaching 78.75% accuracy and 0.80 F1 with a 2-layer MLP.
+            </p>
+            <div class="tag-row">
+              <span>NLP</span>
+              <span>LLM embeddings</span>
+              <span>MLP</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="stack-section" id="stack">
+        <div class="section-heading">
+          <p class="eyebrow">Stack</p>
+          <h2>Comfortable moving between model code, product code, and data plumbing.</h2>
+        </div>
+        <div class="stack-columns">
+          <div>
+            <h3>Languages</h3>
+            <p>C++, Java, Python, JavaScript, TypeScript, HTML/CSS</p>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <p>React, Vue, Node.js, Spring Boot, PyTorch, Pandas</p>
+          </div>
+          <div>
+            <h3>Infrastructure</h3>
+            <p>PostgreSQL, MySQL, Redis, Docker, Bash, Git, Claude Code</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests-section" id="interests">
+        <div>
+          <p class="eyebrow">Interests</p>
+          <h2>Personal Interests</h2>
+        </div>
+        <div class="interest-list" aria-label="Interests">
+          <span>🏸 Badminton</span>
+          <span>♟️ Chess</span>
+          <span>🎵 Music</span>
+          <span>🎮 Video games</span>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Open to research, internship, and technical product conversations.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:yujinxi1104@hotmail.com">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M4 6h16v12H4z" />
+              <path d="m4 7 8 6 8-6" />
+            </svg>
+            <span>yujinxi1104@hotmail.com</span>
+          </a>
+          <a href="tel:+16262650641">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M6.6 3.8 9 3.2l2 4.5-1.5 1.1a12 12 0 0 0 5.7 5.7l1.1-1.5 4.5 2-.6 2.4c-.2.8-.9 1.4-1.8 1.4C10.5 18.8 5.2 13.5 5.2 5.6c0-.9.6-1.6 1.4-1.8z" />
+            </svg>
+            <span>+1 (626) 265-0641</span>
+          </a>
+          <a href="https://linkedin.com/in/jinxiy1104" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M6.5 9.5V18" />
+              <path d="M6.5 6.2v.1" />
+              <path d="M11 18v-5.1c0-1.9 1.1-3.4 3.1-3.4s3.4 1.3 3.4 3.8V18" />
+              <path d="M11 9.8V18" />
+            </svg>
+            <span>linkedin.com/in/jinxiy1104</span>
+          </a>
+          <a href="https://github.com/jinxiy1104" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M9 19c-4 1.3-4-2-5.5-2.5" />
+              <path d="M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.6 4.6 0 0 0 18.7 7c.1-.4.5-1.8-.2-3.5 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6 0C6.6 3.2 5.5 3.5 5.5 3.5 4.8 5.2 5.2 6.6 5.3 7A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22" />
+            </svg>
+            <span>github.com/jinxiy1104</span>
+          </a>
+          <span class="contact-row">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 21s7-5.2 7-11a7 7 0 0 0-14 0c0 5.8 7 11 7 11z" />
+              <path d="M12 10.5h.01" />
+            </svg>
+            <span>Los Angeles, CA</span>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
