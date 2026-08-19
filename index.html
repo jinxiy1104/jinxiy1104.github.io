@@ -23,7 +23,7 @@
         <a href="#projects">Projects</a>
         <a href="#stack">Skills</a>
         <a href="#interests">Interests</a>
-        <a class="nav-resume" href="Jinxi(Jace)%20Yu-Resume.pdf" download>
+        <a class="nav-resume" href="Jinxi(Jace)%20Yu-Resume.pdf" target="_blank" rel="noreferrer">
           <svg aria-hidden="true" viewBox="0 0 24 24">
             <path d="M12 3v12" />
             <path d="m7 10 5 5 5-5" />
@@ -146,10 +146,15 @@
               <h3>NLP Lab UCLA</h3>
               <p class="role">Research Assistant · Natural Language Processing</p>
               <p>
-                Built a federated graph-attention safety guard for LLM multi-agent systems,
-                matching centralized detection within 0.03 AUROC and reducing live attack success
-                by 43%. Replaced diffusion-based topology generation with VQ-VAE and distilled its
-                GNN reward proxy into an MLP, achieving a 64x speedup at comparable performance.
+                Built a privacy-preserving safety guard for LLM multi-agent systems using an
+                edge-featured graph attention network trained through federated learning without
+                sharing raw interaction traces. The 0.5M-parameter, approximately 50 ms CPU sidecar
+                outperformed the centralized-training ceiling on three benchmarks and reduced live
+                attack success by 43% at above-unguarded utility. Amortized MAS topology design into
+                a 16-entry VQ-VAE codebook with a reward-weighted code predictor and an
+                execution-grounded MLP reranker, achieving the best accuracy across all six
+                benchmarks (84.6 vs. 83.0), over 120x faster design at 2.4 ms, and 21.9-33.2% fewer
+                LLM tokens; both first-author papers are in submission to AAAI 2027.
               </p>
             </div>
           </article>
