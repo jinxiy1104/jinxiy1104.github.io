@@ -248,6 +248,7 @@ main {
 
 #education,
 #work,
+#publications,
 #projects,
 #stack,
 #interests {
@@ -522,6 +523,7 @@ h3 {
 }
 
 #work .eyebrow,
+#publications .eyebrow,
 #projects .eyebrow,
 #stack .eyebrow,
 #interests .eyebrow {
@@ -534,6 +536,7 @@ h3 {
 }
 
 .timeline-item,
+.publication-item,
 .project-card,
 .stack-columns > div,
 .education-card {
@@ -591,6 +594,7 @@ h3 {
 
 .time,
 .role,
+.publication-meta,
 .project-meta,
 .tag-row,
 .stack-columns h3 {
@@ -623,10 +627,59 @@ h3 {
 }
 
 .projects-section,
+.publications-section,
 .stack-section,
 .interests-section,
 .contact-section {
   padding: 12px 0 82px;
+}
+
+.publication-list {
+  display: grid;
+  gap: 18px;
+}
+
+.publication-item {
+  padding: 26px;
+}
+
+.publication-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+  color: var(--cyan);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.publication-meta a {
+  color: var(--green);
+}
+
+.publication-item h3 {
+  max-width: 920px;
+  margin-bottom: 10px;
+  font-size: clamp(19px, 2vw, 25px);
+  line-height: 1.35;
+}
+
+.publication-item h3 a:hover,
+.publication-item h3 a:focus-visible,
+.publication-meta a:hover,
+.publication-meta a:focus-visible {
+  color: var(--cyan);
+  outline: none;
+}
+
+.publication-authors {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.publication-authors strong {
+  color: var(--text);
 }
 
 .project-grid {
@@ -930,6 +983,7 @@ h3 {
 
   .project-card,
   .timeline-item,
+  .publication-item,
   .stack-columns > div,
   .education-card {
     padding: 20px;
@@ -944,5 +998,11 @@ h3 {
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 24px;
+  }
+
+  .publication-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
   }
 }
