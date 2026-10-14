@@ -100,7 +100,7 @@
         <div class="education-card">
           <div>
             <h3>B.S. in Computer Science</h3>
-            <p class="role">September 2024 - June 2028 · Los Angeles, CA</p>
+            <p class="role">September 2024 - June 2027 · Los Angeles, CA</p>
           </div>
           <dl class="education-details">
             <div>
@@ -133,10 +133,16 @@
               <h3>UCLA Moonshot Math Harness</h3>
               <p class="role">Research Assistant · Prof. Kai-Wei Chang, Nanyun Peng, and Terence Tao</p>
               <p>
-                Built a long-horizon multi-agent reasoning harness for autonomous mathematical
-                research, orchestrating specialized agents with statically enforced tools and
-                capabilities. Designed persistent graph-based memory and iterative planning to
-                preserve competing proof directions and prioritize high-value branches.
+                Built a long-horizon multi-agent reasoning harness that has solved multiple open
+                mathematical problems, orchestrating specialized explorer, verifier, and consultant
+                agents with a rich library of skills and MCP tools. The harness statically enforces
+                each role's capabilities.
+              </p>
+              <p>
+                Designed persistent graph-based memory to preserve intermediate results and
+                competing proof directions across long-running executions. Self-evolving memory
+                curation and iterative planning prioritize high-value branches and adapt the
+                problem-solving strategy; co-first-author paper in submission to ICLR 2027.
               </p>
             </div>
           </article>
@@ -169,8 +175,9 @@
                 Developed Gaussian speculative decoding in PyTorch using lightweight draft models
                 and single-pass parallel verification, accelerating pretrained time-series
                 foundation models by up to 3.1x across five model families without retraining.
-                Proved throughput and forecast-fidelity guarantees; first-author paper submitted
-                to AAAI 2027.
+                Proved a capped-geometric throughput law to predict speedups before deployment
+                and a bounded-deviation guarantee on forecast fidelity to the target model;
+                first-author paper submitted to AAAI 2027.
               </p>
             </div>
           </article>
@@ -183,7 +190,9 @@
               <p>
                 Built grade management, course management, and role-based notification modules
                 for a university web platform using Vue, Java, Spring Boot, MySQL, and Spring
-                Data JPA.
+                Data JPA, ensuring data integrity across 50+ test cases. Collaborated through
+                Git feature branches and code reviews, and documented REST APIs to streamline
+                frontend-backend integration.
               </p>
             </div>
           </article>
@@ -209,6 +218,28 @@
         </div>
 
         <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-meta">
+              <time datetime="2026-10">October 2026</time>
+              <a href="https://arxiv.org/abs/2610.02945" target="_blank" rel="noreferrer">
+                arXiv:2610.02945
+              </a>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2610.02945" target="_blank" rel="noreferrer">
+                Continual Graph Memory for Mathematical Research Agents
+              </a>
+            </h3>
+            <p class="publication-authors">
+              Junyi Zhang*, <strong>Jinxi Yu*</strong>, Eric Hanchen Jiang*, Jiachen Lu,
+              Zhi Zhang, Xinjie He, Hyunsik Chae, Ethan Ji, Alexander K Taylor,
+              Vigyan Sahai, Yiwen Kou, Kai-Wei Chang, Raghu Meka, Nanyun Peng,
+              Amit Sahai, Terence Tao, and Wei Wang
+              <br />
+              <small>* Equal contribution.</small>
+            </p>
+          </article>
+
           <article class="publication-item">
             <div class="publication-meta">
               <time datetime="2026-09">September 2026</time>
@@ -258,8 +289,10 @@
               </a>
             </h3>
             <p class="publication-authors">
-              Pranav Subbaraman, Fang Sun, <strong>Jinxi Yu</strong>, Yue Yao, Huacong Tang,
+              Pranav Subbaraman*, Fang Sun*, <strong>Jinxi Yu*</strong>, Yue Yao, Huacong Tang,
               Xiao Luo, and Yizhou Sun
+              <br />
+              <small>* Equal contribution.</small>
             </p>
           </article>
         </div>
@@ -286,8 +319,17 @@
             </p>
             <p>
               Engineered a sealed LLM gateway with atomic budget reservations, tiered model
-              routing, cost auditing, Stripe billing, rate limiting, and server-side tenant
-              isolation. Batched embeddings reduced ingest latency from 15 seconds to 600 ms.
+              routing that cut model costs by approximately 5x, and a full cost audit trail.
+              Shipped Stripe billing with idempotent webhooks, Postgres-backed rate limiting,
+              and server-side tenant isolation. Batched embeddings reduced ingest latency
+              from 15 seconds to 600 ms.
+            </p>
+            <p>
+              Moved long-running graph-building and repository-ingestion jobs to an asynchronous
+              worker pipeline on AWS SQS and Lambda/Fargate, eliminating serverless timeout
+              failures with tracked job state, retries, a dead-letter queue, and idempotent workers.
+              Provisioned infrastructure with AWS CDK and added GitHub Actions typecheck/lint
+              checks plus scheduled billing reconciliation to alert on cost drift.
             </p>
             <div class="tag-row">
               <span>Next.js</span>
@@ -295,6 +337,9 @@
               <span>Postgres + pgvector</span>
               <span>Vercel AI SDK</span>
               <span>Drizzle</span>
+              <span>AWS SQS</span>
+              <span>Lambda / Fargate</span>
+              <span>AWS CDK</span>
             </div>
             <a class="project-link" href="https://egox-sigma.vercel.app/" target="_blank" rel="noreferrer">
               Visit website
@@ -362,7 +407,7 @@
         <div class="stack-columns">
           <div>
             <h3>Languages</h3>
-            <p>C++, Java, Python, Go, JavaScript, TypeScript, HTML/CSS</p>
+            <p>Python, C++, Java, Go, JavaScript, TypeScript, HTML/CSS</p>
           </div>
           <div>
             <h3>AI &amp; Application</h3>
@@ -370,7 +415,7 @@
           </div>
           <div>
             <h3>Data &amp; Infrastructure</h3>
-            <p>Redis, MySQL, PostgreSQL, Docker, Bash, Git</p>
+            <p>Redis, MySQL, PostgreSQL, Docker, Bash, Git, AWS SQS, Lambda, Fargate, AWS CDK, GitHub Actions</p>
           </div>
         </div>
       </section>
