@@ -7,20 +7,28 @@
       name="description"
       content="Jinxi (Jace) Yu - UCLA computer science student researching multi-agent systems, LLM safety, and efficient AI inference."
     />
-    <title>Jinxi (Jace) Yu - Homepage</title>
+    <title>Jinxi Yu</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="theme.js"></script>
+    <link rel="preload" href="assets/fonts/ma-shan-zheng-name.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Jinxi Jace Yu home">
-        <span class="brand-text">Homepage</span>
-      </a>
+      <div class="header-socials" aria-label="Profiles">
+        <a href="mailto:yujinxi1104@hotmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7" /></svg></a>
+        <a href="https://scholar.google.com/citations?user=4sUuspQAAAAJ&amp;hl=en" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-6 10 6-10 6zM6 12v6c4 3 8 3 12 0v-6" /></svg></a>
+        <a href="https://github.com/jinxiy1104" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-5.5-2.5M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.6 4.6 0 0 0 18.7 7c.1-.4.5-1.8-.2-3.5 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6 0C6.6 3.2 5.5 3.5 5.5 3.5 4.8 5.2 5.2 6.6 5.3 7A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22" /></svg></a>
+        <a href="https://linkedin.com/in/jinxiy1104" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9v11M5 4v.1M10 20V9m0 5c0-7 9-7 9 0v6" /></svg></a>
+      </div>
       <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#top">About</a>
         <a href="#education">Education</a>
-        <a href="#work">Work</a>
         <a href="#publications">Publications</a>
+        <a href="#work">Work</a>
         <a href="#projects">Projects</a>
         <a href="#stack">Skills</a>
         <a href="#interests">Interests</a>
@@ -33,73 +41,41 @@
           <span>Resume</span>
         </a>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13.2A8.6 8.6 0 0 1 10.8 3.5 8.6 8.6 0 1 0 20.5 13.2Z" /></svg>
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" /></svg>
+        <span class="theme-label">Dark</span>
+      </button>
     </header>
 
-    <aside class="profile-sidebar" aria-label="Profile and contact information">
-      <div class="sidebar-photo">
-        <img src="personalPhoto.png" alt="Jinxi Yu portrait" />
+    <main id="main-content">
+    <section class="profile-hero" id="top" aria-label="Profile and contact information">
+      <div class="hero-copy">
+        <h1>Jinxi (Jace) Yu <span class="name-chinese" lang="zh-Hans">虞锦熙</span></h1>
+        <p class="hero-affiliation">Undergraduate Researcher · University of California, Los Angeles</p>
+        <p class="hero-description">Hi! I’m <strong>Jinxi (Jace) Yu</strong>, a Computer Science undergraduate at UCLA. My research focuses on <strong>multi-agent systems</strong>, <strong>LLM safety</strong>, and <strong>efficient AI inference</strong>.</p>
+        <p class="hero-description">I work on autonomous mathematical reasoning with the UCLA Moonshot Math Harness, alongside research with <strong>Prof. Kai-Wei Chang</strong> at UCLA’s NLP Lab and <strong>Prof. Yizhou Sun</strong> at UCLA’s SCAI Lab.</p>
+        <aside class="opportunity-note" aria-label="Research opportunities">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z" /><path d="M8 10h9M8 14h6" /></svg>
+          <p><strong>I am applying to Ph.D. programs for Fall 2027</strong> and am also open to research-focused roles in industry. Feel free to reach out at <a href="mailto:yujinxi1104@hotmail.com">yujinxi1104@hotmail.com</a>.</p>
+        </aside>
       </div>
-      <div class="sidebar-identity">
-        <strong>Jinxi (Jace) Yu</strong>
-      </div>
-      <div class="sidebar-links">
-        <span class="sidebar-contact">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M12 21s7-5.2 7-11a7 7 0 0 0-14 0c0 5.8 7 11 7 11z" />
-            <path d="M12 10.5h.01" />
-          </svg>
-          <span>Los Angeles, CA</span>
-        </span>
-        <a href="tel:+16262650641" aria-label="Call Jinxi Yu at +1 626 265 0641">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M6.6 3.8 9 3.2l2 4.5-1.5 1.1a12 12 0 0 0 5.7 5.7l1.1-1.5 4.5 2-.6 2.4c-.2.8-.9 1.4-1.8 1.4C10.5 18.8 5.2 13.5 5.2 5.6c0-.9.6-1.6 1.4-1.8z" />
-          </svg>
-          <span>+1 (626) 265-0641</span>
-        </a>
-        <a href="mailto:yujinxi1104@hotmail.com" aria-label="Email Jinxi Yu at yujinxi1104@hotmail.com">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M4 6h16v12H4z" />
-            <path d="m4 7 8 6 8-6" />
-          </svg>
-          <span>Email</span>
-        </a>
-        <a href="https://linkedin.com/in/jinxiy1104" target="_blank" rel="noreferrer" aria-label="Jinxi Yu on LinkedIn">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M6.5 9.5V18" />
-            <path d="M6.5 6.2v.1" />
-            <path d="M11 18v-5.1c0-1.9 1.1-3.4 3.1-3.4s3.4 1.3 3.4 3.8V18" />
-            <path d="M11 9.8V18" />
-          </svg>
-          <span>LinkedIn</span>
-        </a>
-        <a href="https://github.com/jinxiy1104" target="_blank" rel="noreferrer" aria-label="Jinxi Yu on GitHub">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="M9 19c-4 1.3-4-2-5.5-2.5" />
-            <path d="M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.6 4.6 0 0 0 18.7 7c.1-.4.5-1.8-.2-3.5 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6 0C6.6 3.2 5.5 3.5 5.5 3.5 4.8 5.2 5.2 6.6 5.3 7A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22" />
-          </svg>
-          <span>GitHub</span>
-        </a>
-        <a href="https://scholar.google.com/citations?user=4sUuspQAAAAJ&amp;hl=en" target="_blank" rel="noreferrer" aria-label="Jinxi Yu on Google Scholar">
-          <svg aria-hidden="true" viewBox="0 0 24 24">
-            <path d="m3 9 9-5 9 5-9 5z" />
-            <path d="M7 11.8V16c2.8 2.2 7.2 2.2 10 0v-4.2" />
-            <path d="M21 9v6" />
-          </svg>
-          <span>Google Scholar</span>
-        </a>
-      </div>
-    </aside>
-
-    <main id="top">
+      <figure class="hero-portrait">
+        <div class="portrait-frame"><img src="personalPhoto.png" alt="Jinxi Yu at sunset" width="1086" height="1448" fetchpriority="high" /></div>
+      </figure>
+    </section>
 
       <section class="education-section" id="education">
         <div class="section-heading">
-          <p class="eyebrow">Education</p>
-          <h2>University of California, Los Angeles</h2>
+          <h2 class="section-title">Education</h2>
         </div>
         <div class="education-card">
+          <span class="ucla-badge">
+            <img src="assets/ucla-seal.png" alt="UCLA seal" width="64" height="64" />
+          </span>
           <div>
-            <h3>B.S. in Computer Science</h3>
+            <h3 class="university">University of California, Los Angeles</h3>
+            <p class="degree">B.S. in Computer Science</p>
             <p class="role">September 2024 - June 2027 · Los Angeles, CA</p>
           </div>
           <dl class="education-details">
@@ -122,9 +98,116 @@
         </div>
       </section>
 
+      <section class="publications-section" id="publications">
+        <div class="section-heading publications-heading">
+          <h2 class="section-title">Publications</h2>
+          <a class="scholar-link" href="https://scholar.google.com/citations?user=4sUuspQAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-meta">
+              <time datetime="2026-10">October 2026</time>
+              <a href="https://arxiv.org/abs/2610.02945" target="_blank" rel="noreferrer">
+                arXiv:2610.02945
+              </a>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2610.02945" target="_blank" rel="noreferrer">
+                Continual Graph Memory and Community Infrastructure for AI-Assisted Mathematical Discovery
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <strong>Jinxi Yu*</strong>, Eric Hanchen Jiang*, Junyi Zhang*, et al.
+              <br />
+              <small>* Equal contribution.</small>
+              <span class="publication-status">Under review at Nature Machine Intelligence.</span>
+            </p>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-meta">
+              <time datetime="2026-09">September 2026</time>
+              <a href="https://arxiv.org/abs/2609.02967" target="_blank" rel="noreferrer">
+                arXiv:2609.02967
+              </a>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2609.02967" target="_blank" rel="noreferrer">
+                Privacy-Preserving Topology-Guided Safety for LLM-Based Multi-Agent Systems via Federated Graph Learning
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <strong>Jinxi Yu</strong>, Eric Hanchen Jiang, Levina Li, Dong Liu, Zhi Zhang,
+              Wenxiao Zhao, Yanxuan Yu, Kai-Wei Chang, and Ying Nian Wu
+              <span class="publication-status">Under review at AAAI 2027.</span>
+            </p>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-meta">
+              <time datetime="2026-09">September 2026</time>
+              <a href="https://arxiv.org/abs/2609.02264" target="_blank" rel="noreferrer">
+                arXiv:2609.02264
+              </a>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2609.02264" target="_blank" rel="noreferrer">
+                Codebook Agent: Amortized Topology Design for LLM Multi-Agent Systems
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <strong>Jinxi Yu</strong>, Yubei Li, Eric Hanchen Jiang, Zhi Zhang, Dong Liu,
+              Wenxiao Zhao, Levina Li, Kai-Wei Chang, and Ying Nian Wu
+              <span class="publication-status">Under review at AAAI 2027.</span>
+            </p>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-meta">
+              <time datetime="2025-11">November 2025</time>
+              <a href="https://arxiv.org/abs/2511.18191" target="_blank" rel="noreferrer">
+                arXiv:2511.18191
+              </a>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2511.18191" target="_blank" rel="noreferrer">
+                Accelerating Time Series Foundation Models with Speculative Decoding
+              </a>
+            </h3>
+            <p class="publication-authors">
+              <strong>Jinxi Yu*</strong>, Pranav Subbaraman*, Fang Sun*, Yue Yao, Huacong Tang,
+              Xiao Luo, and Yizhou Sun
+              <br />
+              <small>* Equal contribution.</small>
+              <span class="publication-status">Under review at AAAI 2027.</span>
+            </p>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-meta">
+              <time datetime="2026-07">July 2026</time>
+              <a href="https://arxiv.org/abs/2607.07779" target="_blank" rel="noreferrer">
+                arXiv:2607.07779
+              </a>
+            </div>
+            <h3>
+              <a href="https://arxiv.org/abs/2607.07779" target="_blank" rel="noreferrer">
+                From Solvers to Research: Large Language Model-Driven Formal Mathematics at the Research Frontier
+              </a>
+            </h3>
+            <p class="publication-authors">
+              Eric Jiang, Xiao Liang, Junyi Zhang, Justin Baker, Zhi Zhang, Yingjia Wan,
+              Yubei Li, <strong>Jinxi Yu</strong>, et al.
+              <span class="publication-status">Under review at IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
       <section class="section-grid" id="work">
         <div class="section-heading">
-          <p class="eyebrow">Work Experience</p>
+          <h2 class="section-title">Research &amp; Work Experience</h2>
         </div>
         <div class="timeline">
           <article class="timeline-item">
@@ -142,7 +225,7 @@
                 Designed persistent graph-based memory to preserve intermediate results and
                 competing proof directions across long-running executions. Self-evolving memory
                 curation and iterative planning prioritize high-value branches and adapt the
-                problem-solving strategy; co-first-author paper in submission to ICLR 2027.
+                problem-solving strategy; co-first-author paper under review at Nature Machine Intelligence.
               </p>
             </div>
           </article>
@@ -157,7 +240,7 @@
                 edge-featured graph attention network trained through federated learning without
                 sharing raw interaction traces. The 0.5M-parameter, approximately 50 ms CPU sidecar
                 outperformed the centralized-training ceiling on three benchmarks and reduced live
-                attack success by 43% at above-unguarded utility. Amortized MAS topology design into
+                attack success by 43% with near-unguarded utility. Amortized MAS topology design into
                 a 16-entry VQ-VAE codebook with a reward-weighted code predictor and an
                 execution-grounded MLP reranker, achieving the best accuracy across all six
                 benchmarks (84.6 vs. 83.0), over 120x faster design at 2.4 ms, and 21.9-33.2% fewer
@@ -174,7 +257,7 @@
               <p>
                 Developed Gaussian speculative decoding in PyTorch using lightweight draft models
                 and single-pass parallel verification, accelerating pretrained time-series
-                foundation models by up to 3.1x across five model families without retraining.
+                foundation models by up to 3.0x across five model families without retraining.
                 Proved a capped-geometric throughput law to predict speedups before deployment
                 and a bounded-deviation guarantee on forecast fidelity to the target model;
                 first-author paper submitted to AAAI 2027.
@@ -201,106 +284,25 @@
             <div class="time">Jun 2025 - Jul 2025</div>
             <div class="timeline-content">
               <h3>Huatai Securities Co., Ltd.</h3>
-              <p class="role">Data Analysis Intern · Wealth Management</p>
+              <p class="role">Data Analyst Intern · Wealth Management</p>
               <p>
-                Analyzed 2,000+ high-net-worth client records and cross-referenced foundation
-                and university financial statements to surface 30+ organizations with investable
-                endowment assets.
+                Conducted quantitative analysis of 20+ institutional investment portfolios across
+                five years of historical data, evaluating return distributions, volatility, maximum
+                drawdowns, and risk-adjusted performance to identify investment trends.
+              </p>
+              <p>
+                Developed Python-based data analysis pipelines to clean and process financial
+                datasets, calculate portfolio performance metrics, and visualize asset allocation
+                and historical returns to support investment research and decision-making.
               </p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="publications-section" id="publications">
-        <div class="section-heading wide">
-          <p class="eyebrow">Publications</p>
-        </div>
-
-        <div class="publication-list">
-          <article class="publication-item">
-            <div class="publication-meta">
-              <time datetime="2026-10">October 2026</time>
-              <a href="https://arxiv.org/abs/2610.02945" target="_blank" rel="noreferrer">
-                arXiv:2610.02945
-              </a>
-            </div>
-            <h3>
-              <a href="https://arxiv.org/abs/2610.02945" target="_blank" rel="noreferrer">
-                Continual Graph Memory for Mathematical Research Agents
-              </a>
-            </h3>
-            <p class="publication-authors">
-              Junyi Zhang*, <strong>Jinxi Yu*</strong>, Eric Hanchen Jiang*, Jiachen Lu,
-              Zhi Zhang, Xinjie He, Hyunsik Chae, Ethan Ji, Alexander K Taylor,
-              Vigyan Sahai, Yiwen Kou, Kai-Wei Chang, Raghu Meka, Nanyun Peng,
-              Amit Sahai, Terence Tao, and Wei Wang
-              <br />
-              <small>* Equal contribution.</small>
-            </p>
-          </article>
-
-          <article class="publication-item">
-            <div class="publication-meta">
-              <time datetime="2026-09">September 2026</time>
-              <a href="https://arxiv.org/abs/2609.02264" target="_blank" rel="noreferrer">
-                arXiv:2609.02264
-              </a>
-            </div>
-            <h3>
-              <a href="https://arxiv.org/abs/2609.02264" target="_blank" rel="noreferrer">
-                Codebook Agent: Amortized Topology Design for LLM Multi-Agent Systems
-              </a>
-            </h3>
-            <p class="publication-authors">
-              <strong>Jinxi Yu</strong>, Yubei Li, Eric Hanchen Jiang, Zhi Zhang, Dong Liu,
-              Wenxiao Zhao, Levina Li, Kai-Wei Chang, and Ying Nian Wu
-            </p>
-          </article>
-
-          <article class="publication-item">
-            <div class="publication-meta">
-              <time datetime="2026-09">September 2026</time>
-              <a href="https://arxiv.org/abs/2609.02967" target="_blank" rel="noreferrer">
-                arXiv:2609.02967
-              </a>
-            </div>
-            <h3>
-              <a href="https://arxiv.org/abs/2609.02967" target="_blank" rel="noreferrer">
-                Privacy-Preserving Topology-Guided Safety for LLM-Based Multi-Agent Systems via Federated Graph Learning
-              </a>
-            </h3>
-            <p class="publication-authors">
-              <strong>Jinxi Yu</strong>, Eric Hanchen Jiang, Levina Li, Dong Liu, Zhi Zhang,
-              Wenxiao Zhao, Yanxuan Yu, Kai-Wei Chang, and Ying Nian Wu
-            </p>
-          </article>
-
-          <article class="publication-item">
-            <div class="publication-meta">
-              <time datetime="2025-11">November 2025</time>
-              <a href="https://arxiv.org/abs/2511.18191" target="_blank" rel="noreferrer">
-                arXiv:2511.18191
-              </a>
-            </div>
-            <h3>
-              <a href="https://arxiv.org/abs/2511.18191" target="_blank" rel="noreferrer">
-                Accelerating Time Series Foundation Models with Speculative Decoding
-              </a>
-            </h3>
-            <p class="publication-authors">
-              Pranav Subbaraman*, Fang Sun*, <strong>Jinxi Yu*</strong>, Yue Yao, Huacong Tang,
-              Xiao Luo, and Yizhou Sun
-              <br />
-              <small>* Equal contribution.</small>
-            </p>
-          </article>
-        </div>
-      </section>
-
       <section class="projects-section" id="projects">
         <div class="section-heading wide">
-          <p class="eyebrow">Project Highlights</p>
+          <h2 class="section-title">Projects</h2>
         </div>
 
         <div class="project-grid">
@@ -402,7 +404,7 @@
 
       <section class="stack-section" id="stack">
         <div class="section-heading">
-          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">Skills</h2>
         </div>
         <div class="stack-columns">
           <div>
@@ -422,7 +424,7 @@
 
       <section class="interests-section" id="interests">
         <div>
-          <p class="eyebrow">Interests</p>
+          <h2 class="section-title">Interests</h2>
         </div>
         <div class="interest-list" aria-label="Interests">
           <span>🏸 Badminton</span>
@@ -433,6 +435,11 @@
       </section>
 
     </main>
+    <footer class="site-footer">
+      <a class="footer-name" href="#top">Jinxi (Jace) Yu</a>
+      <p>University of California, Los Angeles</p>
+      <a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
 
     <script src="script.js"></script>
   </body>
